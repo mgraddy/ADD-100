@@ -14,4 +14,4 @@ def main():
     print(f"The simple interest for ${p:,.2f} at {r}% over {t} years is ${interest:,.2f}.")
 
 if True:
-    main()
+    main()  
