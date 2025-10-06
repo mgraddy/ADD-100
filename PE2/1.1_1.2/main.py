@@ -13,13 +13,13 @@ Make sure to call the main function!
 After completing the program, upload it to your GitHub repository.
 Submit the link to your GitHub repository in Canvas.'''
 
-import random
+import random # Import the random package
 
 
 def main():
-    guess = -1
-    random_int = random.randint(1, 100)
-    while guess != random_int:
+    guess = -1 # Initialize guess to an int out of range
+    random_int = random.randint(1, 100) # Generate a random integer between 1 and 100
+    while guess != random_int: # Runs while user input does not equal the generated number
         guess = int(input("Guess a number: "))
         if abs(random_int - guess) <= 5:
             print("Very Hot")
