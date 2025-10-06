@@ -17,6 +17,8 @@ KG_PER_POUND = 0.453592
 M_PER_IN = 0.0254
 
 # Main Function
+
+
 def main():
 
     # Prompt user for height and weight
@@ -24,10 +26,10 @@ def main():
     height_in = int(input("Enter your height in inches: "))
 
     # Perform conversions and bmi calculation
-    weight_kg = weight_lbs * KG_PER_POUND # Convert weight to kg
-    height_m = height_in * M_PER_IN # Convert height to m
-    bmi = weight_kg / (height_m * height_m) # Calculate bmi
-    
+    weight_kg = weight_lbs * KG_PER_POUND  # Convert weight to kg
+    height_m = height_in * M_PER_IN  # Convert height to m
+    bmi = weight_kg / (height_m * height_m)  # Calculate bmi
+
     # Determine bmi category
     if bmi < 18.5:
         weight_category = "underweight"
@@ -39,9 +41,10 @@ def main():
         weight_category = "obese"
     else:
         print("Error.")
-    
+
     # Print results
     print(f"Your BMI is: {bmi}")
     print(f"You are in the {weight_category} category.")
+
 
 main()
