@@ -14,9 +14,11 @@ After completing the program, upload it to your GitHub repository.
 Submit the link to your GitHub repository in Canvas.'''
 
 import random
+
+
 def main():
     guess = -1
-    random_int = random.randint(1,100)
+    random_int = random.randint(1, 100)
     while guess != random_int:
         guess = int(input("Guess a number: "))
         if abs(random_int - guess) <= 5:
@@ -28,4 +30,6 @@ def main():
         else:
             print("Cold")
     print("Congratulations, you found the number!")
+
+
 main()

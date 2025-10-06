@@ -1,5 +1,5 @@
-from math_operations import calculator
-from math_operations import geometry
+from modules.math_operations import calculator
+from modules.math_operations import geometry
 def main():
     result = calculator.add(5, 3)
     print("Addition result:", result)
