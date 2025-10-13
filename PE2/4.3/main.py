@@ -16,7 +16,7 @@ def main():
         if count > 0:
             average = total / count
             print("Total:", "{:,.2f}".format(total))
-            print("Count:", count)
+            print("Number of Entries:", count)
             print("Average:", "{:,.2f}".format(average))
     except IOError:
         print("An IOError has occurred.")
